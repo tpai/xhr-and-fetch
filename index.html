@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>xhr & fetch</title>
+  <!-- for fetch -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.4.1/es5-shim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.4.1/es5-sham.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+  <style type="text/css">
+    a { text-decoration: none; }
+    a:link { color: blue; }
+    a:visited { color: blue; }
+    a:active { color: blue; }
+  </style>
+</head>
+<body>
+    <h2>Local API: <a href="/data" target="_blank">/data</a></h1>
+    <button id="xhr">XHR</button> <button id="fetch">Fetch</button> 
+
+    <h2>Remote API: <a href="http://jsonplaceholder.typicode.com/posts" target="_blank">http://jsonplaceholder.typicode.com/posts</a></h2>
+    <button id="xdr">XDR</button> <button id="fetchJsonp">Fetch JSONP</button>
+
+    <pre id="result"></pre>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
